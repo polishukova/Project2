@@ -1,3 +1,43 @@
+@import "https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
 
+h1, h2, h3, h4, h5, h6, p {
+  font-style: normal;
+  font-weight: normal;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+main {
+  background: url("desktop.6a127739.svg") center / cover no-repeat;
+  position: relative;
+}
+
+main:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  opacity: .8;
+  z-index: 1;
+  background-color: #252b49;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.logo {
+  z-index: 2;
+  border-bottom: 1px solid #babbc5;
+}
 
 /*# sourceMappingURL=index.e8265c92.css.map */

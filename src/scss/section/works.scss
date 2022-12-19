@@ -1,0 +1,14 @@
+.works__thumb{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    &-img--wrapper{
+        width: 25%;
+
+        &:hover{
+        background: $red 80%;
+        }
+    }
+}
+
