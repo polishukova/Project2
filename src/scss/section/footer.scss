@@ -1,0 +1,134 @@
+.footer__top--wrapper{
+    background: $footer-top;
+    color: $white;
+}
+
+.footer__top{
+    display: flex;
+    gap: 30px;
+    padding: 71px 0 66px;
+
+    @media (max-width: 1200px){
+        gap: 20px;
+        padding: 45px 0 40px;
+    }
+
+    @media (max-width: 768px){
+        flex-direction: column;
+    }
+
+    &-elem{
+        width: 33%;
+
+        @media (max-width: 768px){
+            width: 100%;
+        }
+
+        h5{
+            font-family: "Raleway";
+            font-size: 18px;
+            font-weight: 700;
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 29px;
+
+            @media (max-width: 1200px){
+                font-size: 14px;
+                margin-bottom: 17px;
+            }
+
+            @media (max-width: 768px){
+                margin-bottom: 34px;
+            }
+        }
+
+        p{
+            font-family: "Raleway";
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 21px;
+            text-align: center;
+
+            @media (max-width: 1200px){
+                font-size: 14px;
+                line-height: 16px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .footer__top-elem:first-child{
+        padding-bottom: 49px;
+    }
+}
+
+.footer__socials-list{
+    display: flex;
+    justify-content: center;
+    gap: 27px;
+    margin-top: 55px;
+    padding: 0;
+
+    @media (max-width: 1200px){
+        gap:23px;
+        margin-top: 32px;
+    }
+
+    @media (max-width: 768px){
+        margin-bottom: 50px;
+    }
+}
+
+.socials-list__elem{
+    border: 1px solid $icons;
+    width: 39px;
+    height: 39px;
+    text-align: center;
+    line-height: 39px;
+
+    @media (max-width: 1200px){
+        width: 33px;
+        height: 33px;
+        line-height: 33px;
+    }
+
+    a{
+        color:$icons;
+        font-size: 18px;
+
+        @media (max-width: 1200px){
+            font-size: 15px;
+        }
+    }
+}
+
+.socials-list__elem:hover{
+    border-color: $red;
+    cursor: pointer;
+    a{
+        color:$red;
+    }
+}
+
+.footer__bottom--wrapper{
+    background: $footer-bottom;
+    color: $footer-text;
+}
+
+.footer__bottom{
+    font-family: "Raleway";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+    padding: 15px 0;
+
+    @media (max-width: 1200px){
+        font-size: 14px;
+    }
+
+    span{
+        color:$white;
+    }
+}

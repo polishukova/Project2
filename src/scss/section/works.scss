@@ -3,12 +3,79 @@
     flex-wrap: wrap;
     width: 100%;
 
-    &-img--wrapper{
+    &-element{
         width: 25%;
+        position: relative;
 
-        &:hover{
-        background: $red 80%;
+        @media (max-width: 768px){
+            width: 50%;
         }
     }
 }
 
+.element__img{
+    width: 379px;
+    height: 340px;
+    overflow: hidden;
+
+    @media (max-width: 1200px){
+        width: 256px;
+        height: 230px;
+    }
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.element-text{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background:rgba(255, 67, 67, 0.8);
+    transition: all .3s ease-in-out;
+
+    &:hover{
+        opacity: 1;
+    }
+}
+
+.element-text__title{
+    font-family: "Raleway";
+    font-size: 24px;
+    font-weight: 900;
+    text-align: center;
+    color: $white;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+
+    @media (max-width: 1200px){
+        font-size: 18px;
+        margin-bottom: 22px;
+    }
+
+    @media (max-width: 768px){
+        margin-bottom: 5px;
+    }
+}
+
+.element-text__subtitle{
+    font-family: "Raleway";
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    color: $white;
+
+    @media (max-width: 1200px){
+        font-size: 14px;
+    }
+}

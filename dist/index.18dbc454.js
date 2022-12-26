@@ -532,6 +532,11 @@ function hmrAcceptRun(bundle, id) {
 }
 
 },{}],"1SICI":[function(require,module,exports) {
+let menuBtn = document.querySelector(".menu-btn");
+let menu = document.querySelector(".menu");
+menuBtn.addEventListener("click", function() {
+    menu.classList.toggle("active");
+});
 
 },{}]},["jQVXF","1SICI"], "1SICI", "parcelRequire4c92")
 
