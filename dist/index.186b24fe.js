@@ -1,0 +1,1 @@
+let e=document.querySelector(".menu-btn"),t=document.querySelector(".menu");e.addEventListener("click",(function(){t.classList.toggle("active")}));
